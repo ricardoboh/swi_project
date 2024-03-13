@@ -48,5 +48,6 @@ Na konci každé směny každý rozvozce bude moci zakliknout odchod a aplikace 
 **SR3** Pravidelné zálohování dat.<br>
 
 
+![use case diagram](https://github.com/ricardoboh/readmeOOP/blob/main/use_case_pic.png?raw=true)
 
 
