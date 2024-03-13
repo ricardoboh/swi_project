@@ -1,6 +1,6 @@
 # Model Aplikace pro rozvozce pizzy
 ## O aplikaci
-Aplikce bude rozšířením pro podnik s prodejem pizzy. Tato mobilní aplikace bude napojená na centrální databázi všech objednávek a rozvozci si budou vybírat objednávky, které povezou. 
+Aplikce bude rozšířením pro již fungující systém v podniku s prodejem pizzy. Tato mobilní aplikace bude napojená na databázi všech objednávek a rozvozci si budou vybírat objednávky, které povezou. 
 ## Na začátku
 Když rozvozce příjde do práce, přihlásí se do aplikce a bude mu přiděleno identifikační číslo R.n pod kterým se bude identifikovat pro další rozvozce. Na začátku každé směny rozvozce do aplikace zaklikne příchod poté, co si orazí štípačku v práci.
 ## Fungování aplikace
