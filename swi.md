@@ -50,9 +50,9 @@ Na konci každé směny každý rozvozce bude moci zakliknout odchod a aplikace 
 
 ![use case diagram](https://github.com/ricardoboh/readmeOOP/blob/main/use_case_pic.png?raw=true)
 
-[comment]: <> opravit use case diagram // smayat d2di4nost, nahradit MANAGEMENT cest
+[comment]: <> (opravit use case diagram // smayat d2di4nost, nahradit MANAGEMENT cest)
 [comment]: <> Title: UC1: Rezervace pokoje
-[comment]: <> Actors: (primární aktor podtrhnout)
+[comment]: <> Actors: primární aktor podtrhnout
 [comment]: <> Trigger: Uživatel zvolil možnost rezervovat pokoj na www.
 [comment]: <> Pre condition: (podmínka splněná, než se stane tento use case) uživatel musí být příhlášen
 [comment]: <> Post condition: (podmínka, co se musí stát po use casu.)
