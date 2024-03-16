@@ -147,3 +147,40 @@ Destruktor *nepotřebujeme, když jsou data statická*, používáme ho jedině,
 className *konstructor = className(2, 10);
 del konstruktor;
 ```
+
+# DRUHÉ CVIČENÍ
+
+### *Co je hlavními příčinami změn software?*<br/>
+`Přidávání nových funkcí` softwaru, `Oprava chyb`, nebo errorů, které byli v předchozích verzích, `Zlepšení designu`, úprava legacy code, `Optimalizace` stávajícího software.
+
+### *Jaké jsou hlavní faktory ovlivňující objektovou orientovanost?*<br/>
+`Metoda a jazyk`, přehlednost kódu `Implementace a prostředí`, nástroje pro vývoj `Knihovny`, opakovatelná použitelnost.
+
+### *Vysvětlete, co rozumíme pojmy objektově orientovaná metoda (přístup) a jazyk.*<br/>
+Jde o veškeré `textové, či grafické materiály`, které jsou spojeny se software, je to způsob uvažování nad problémem, ale také způsob vyjadřování. 
+
+### *Vysvětlete, co rozumíme podporou objektově orientované implementace.*<br/>
+Programovací jazyk, nebo framework, který je schopen `poskytovat nástroje a mechanismy` pro efektivní práci s objekty a OOP koncepty.  
+
+### *Vysvětlete, co rozumíme podporou opakované použitelnosti.*<br/>
+Softwarové komponenty jsou navrženy tak, aby bylo možné je oddělit od ostatních a také je kombinovat s ostatními --> `modularita a kombinovatelnost` knihovna pro práci s databázemi.
+
+### *Vysvětlete pojmy třída a objekt a použijte správnou terminologii.*<br/>
+`TŘÍDA` je část softawaru, která popisuje `abstraktní datový typ` objekty se `společným chováním reprezentovaným seznamem operací`, které umí vykonávat.
+`OBJEKT` je konkrétní instance dané třídy, která má svoji vlastní sadu dat a může vykonávat metody v třídě.
+
+### *Zdůrazněte vlastnosti třídy z pohledu modularity.*<br/>
+Třídy by měly být `samostané` a `kombinovatelné` s ostatními. Třída by měla `zapouzdřovat` své interní detaily, což znamená, že k proměnné key se dostaneme jen přes GetKey() funkci. `Opakované použití`, což znamená `knihovny`.
+
+### *Vysvětlete princip zapouzdření v OOP.*<br/>
+Třída `skrývá` informace o svých proměnných, k proměnné `key` se dostaneme jen přes funkci GetKey(). Zvyšuje úroveň abstrakce a izolace. --> Volání metody, ne proměnné.
+
+### *Vysvětlete princip zasílání zpráv.*<br/>
+Je to výpočetní mechanismus, zaslána zpráva daného jména a s potřebnými parametry
+```cpp
+aPerson.ChangeLastName("Charles");
+```
+
+### * Vysvětlete principy deklarace a definice jednoduché třídy v C++.*<br/>
+`Deklarace` je Popis třídy s proměnnými a metodami, které ve třídě můžeme použít.<br/>
+`Definice (implementace)` je popis jednotlivých metod, které se ve třídě nacházejí. Konstruktor, destruktor atd..
