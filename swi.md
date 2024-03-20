@@ -61,7 +61,7 @@ Na konci každé směny každý rozvozce bude moci zakliknout odchod a aplikace 
 **Main success:**</br>
 &emsp;&emsp;&emsp;&emsp;1. Uživatel zaznamená odchod.</br>
 &emsp;&emsp;&emsp;&emsp;2. Čas se uloží do databáze.</br>
-&emsp;&emsp;&emsp;&emsp;3. Zaměstnancovi je vypočítána mzda a vyskočí pop-up okno.</br>
+&emsp;&emsp;&emsp;&emsp;3. Zaměstnancovi je vypočítána mzda a vyskočí pop-up okno.</br></br>
 **1a.**: Čas příchodu je stejný, jako čas odchodu.</br>
 &emsp;&emsp;*1.a1* - Uživateli je sděleno, že čas, který zadal není v souladu s jeho pracovní dobou.</br>
 &emsp;&emsp;*1.a2* - Čas se neuloží do databáze.</br>
@@ -81,7 +81,7 @@ Na konci každé směny každý rozvozce bude moci zakliknout odchod a aplikace 
 &emsp;&emsp;&emsp;&emsp;1. Rozvozce zadá adresu rozvozu.</br>
 &emsp;&emsp;&emsp;&emsp;2. Vypočítá se nejlepší možná trasa.</br>
 &emsp;&emsp;&emsp;&emsp;3. Seznam adres je přeuspořádán vzhledem k nejrychlejšímu času doručení.</br>
-&emsp;&emsp;&emsp;&emsp;4. Use-case se opakuje do té doby, než uživatel klikne na začít rozvoz.</br>
+&emsp;&emsp;&emsp;&emsp;4. Use-case se opakuje do té doby, než uživatel klikne na začít rozvoz.</br></br>
 **1a.**: Rozvozce zadal stejnou adresu, kterou již v seznamu má.</br>
 &emsp;&emsp;*1.a1* - Uživateli vyskočí info a zeptá se, jestli adresu chce přidat podruhé.</br>
 &emsp;&emsp;&emsp;&emsp;*1.a2.ANO* - Pokračuje se v use case 2. krokem</br>
