@@ -64,19 +64,19 @@ Na konci každé směny každý rozvozce bude moci zakliknout odchod a aplikace 
 [comment]: <>                                                              ->> ...a1:  co se stane vrátit se do hlavního menu
 )
 
-**Title:** Zaznamenání odchodu
-**Actors:** Rozvozce
-**Trigger:** Rozvozce klikne na tlačítko v aplikaci.
-**Pre-condition:** Rozvozce musí být přihlášen a musí mít zaznamenaný příchod.
-**Post-condition:** Rozvozcovi musí být vypočítána mzda.
-**Minimal guaranties:** V aplikaci vyskočí pop-up okno s vypočítanou mzdou.
-**Main success:** 1. Uživatel zaznamená odchod.
-                  2. Čas se uloží do databáze.
-                  3. Zaměstnancovi je vypočítána mzda a vyskočí pop-up okno.
-**1.**: Čas příchodu je stejný, jako čas odchodu.
-        *1.a1* - Uživateli je sděleno, že čas, který zadal není v souladu s jeho pracovní dobou.
-        *1.a2* - Čas se neuloží do databáze.
-        *1.a3* - Zaměstnancovi není vypočítána mzda a pop-up okno nevyskočí.
-**3.**: Zaměstnancova hodinová sazba je 0,-
-        *3.a1* Účetní, nebo managerovi se odešle výzva k nastavení mzdy.
-        *3.a2* Use case pokračuje dál, s výslednou mzdou 0,-
+**Title:** Zaznamenání odchodu</br>
+**Actors:** Rozvozce</br>
+**Trigger:** Rozvozce klikne na tlačítko v aplikaci.</br>
+**Pre-condition:** Rozvozce musí být přihlášen a musí mít zaznamenaný příchod.</br>
+**Post-condition:** Rozvozcovi musí být vypočítána mzda.</br>
+**Minimal guaranties:** V aplikaci vyskočí pop-up okno s vypočítanou mzdou.</br>
+**Main success:** 1. Uživatel zaznamená odchod.</br>
+                  2. Čas se uloží do databáze.</br>
+                  3. Zaměstnancovi je vypočítána mzda a vyskočí pop-up okno.</br>
+**1.**: Čas příchodu je stejný, jako čas odchodu.</br>
+        *1.a1* - Uživateli je sděleno, že čas, který zadal není v souladu s jeho pracovní dobou.</br>
+        *1.a2* - Čas se neuloží do databáze.</br>
+        *1.a3* - Zaměstnancovi není vypočítána mzda a pop-up okno nevyskočí.</br>
+**3.**: Zaměstnancova hodinová sazba je 0,-</br>
+        *3.a1* Účetní, nebo managerovi se odešle výzva k nastavení mzdy.</br>
+        *3.a2* Use case pokračuje dál, s výslednou mzdou 0,-</br>
