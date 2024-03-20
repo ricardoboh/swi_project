@@ -71,13 +71,13 @@ Na konci každé směny každý rozvozce bude moci zakliknout odchod a aplikace 
 **Post-condition:** Rozvozcovi musí být vypočítána mzda.</br>
 **Minimal guaranties:** V aplikaci vyskočí pop-up okno s vypočítanou mzdou.</br>
 **Main success:**</br>
-&emsp;&emsp;&emsp;1. Uživatel zaznamená odchod.</br>
-&emsp;&emsp;&emsp;2. Čas se uloží do databáze.</br>
-&emsp;&emsp;&emsp;3. Zaměstnancovi je vypočítána mzda a vyskočí pop-up okno.</br>
+&emsp;&emsp;&emsp;&emsp;1. Uživatel zaznamená odchod.</br>
+&emsp;&emsp;&emsp;&emsp;2. Čas se uloží do databáze.</br>
+&emsp;&emsp;&emsp;&emsp;3. Zaměstnancovi je vypočítána mzda a vyskočí pop-up okno.</br>
 **1.**: Čas příchodu je stejný, jako čas odchodu.</br>
 &emsp;&emsp;*1.a1* - Uživateli je sděleno, že čas, který zadal není v souladu s jeho pracovní dobou.</br>
 &emsp;&emsp;*1.a2* - Čas se neuloží do databáze.</br>
 &emsp;&emsp;*1.a3* - Zaměstnancovi není vypočítána mzda a pop-up okno nevyskočí.</br>
 **3.**: Zaměstnancova hodinová sazba je 0,-</br>
-        *3.a1* Účetní, nebo managerovi se odešle výzva k nastavení mzdy.</br>
-        *3.a2* Use case pokračuje dál, s výslednou mzdou 0,-</br>
+&emsp;&emsp;*3.a1* Účetní, nebo managerovi se odešle výzva k nastavení mzdy.</br>
+&emsp;&emsp;*3.a2* Use case pokračuje dál, s výslednou mzdou 0,-</br>
