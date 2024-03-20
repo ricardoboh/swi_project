@@ -31,20 +31,23 @@ Na konci každé směny každý rozvozce bude moci zakliknout odchod a aplikace 
 **UR1** Aplikace musí mít noční režim.<br>
 **UR2** Aplikace musí být jednoduchá, ideálně jedna hlavní pracovní plocha s objednávkami.<br>
 **UR3** Aplikace musí používat barvy k označení stavu objednávky.<br>
+**UR4** Aplikace musí používat vložení adresy pomocí hlasu.<br>
+**UR5** Aplikace musí mít dostupnou nápovědu 'návod na ovládání'.</br>
 
 ### Reliability
 **RR1** Aplikace se musí obnovovat jednou za 20 sekund.<br>
 **RR2** Systém musí být zabezpečený proti ztrátě dat, nebo corrupted data --> Integrita dat.<br>
-**RR3** Systém si musí udržovat naposledy načtená data i po výpadku network... Po výpadku internetu se nesmí zobrazit bílá obrazovka.<br>
+**RR3** Systém si musí udržovat naposledy načtená data i po výpadku internetového připojení. Po výpadku internetu se nesmí zobrazit bílá obrazovka.<br>
+**RR4** Systém musí mít implementovaný návrat k poslednímu funkčnímu stavu.<br>
 
 ### Performance
-**PR1** Systém musí být mobile friendly --> nevyužívat mnoho baterie při práci na pozadí.<br>
+**PR1** Systém musí být mobile device friendly --> nevyužívat mnoho baterie při práci na pozadí.<br>
 **PR2** Systém musí být škálovatelný, např. přidání nové provozovny se stejným systémem.<br>
-**PR3** Systém musí mít rychlou odezvu na server --> Edison volení rozvrhu.<br>
+**PR3** Systém musí mít rychlou odezvu na server.<br>
 
 ### Supportability
 **SR1** Aplikace musí mít dokumentaci.<br>
-**SR2** Error feedback od doručovatelů, v případě chyby.<br>
+**SR2** Error feedback od uživatelů, v případě chyby.<br>
 **SR3** Pravidelné zálohování dat.<br>
 
 
