@@ -64,3 +64,19 @@ Na konci každé směny každý rozvozce bude moci zakliknout odchod a aplikace 
 [comment]: <>                                                              ->> ...a1:  co se stane vrátit se do hlavního menu
 )
 
+**Title:** Zaznamenání odchodu
+**Actors:** Rozvozce
+**Trigger:** Rozvozce klikne na tlačítko v aplikaci.
+**Pre-condition:** Rozvozce musí být přihlášen a musí mít zaznamenaný příchod.
+**Post-condition:** Rozvozcovi musí být vypočítána mzda.
+**Minimal guaranties:** V aplikaci vyskočí pop-up okno s vypočítanou mzdou.
+**Main success:** 1. Uživatel zaznamená odchod.
+                  2. Čas se uloží do databáze.
+                  3. Zaměstnancovi je vypočítána mzda a vyskočí pop-up okno.
+**1.**: Čas příchodu je stejný, jako čas odchodu.
+        *1.a1* - Uživateli je sděleno, že čas, který zadal není v souladu s jeho pracovní dobou.
+        *1.a2* - Čas se neuloží do databáze.
+        *1.a3* - Zaměstnancovi není vypočítána mzda a pop-up okno nevyskočí.
+**3.**: Zaměstnancova hodinová sazba je 0,-
+        *3.a1* Účetní, nebo managerovi se odešle výzva k nastavení mzdy.
+        *3.a2* Use case pokračuje dál, s výslednou mzdou 0,-
