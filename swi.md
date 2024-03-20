@@ -51,6 +51,7 @@ Na konci každé směny každý rozvozce bude moci zakliknout odchod a aplikace 
 ![use case diagram](https://github.com/ricardoboh/readmeOOP/blob/main/use_case_pic.png?raw=true)
 </br></br></br>
 
+## Use case scenarios
 **Title:** Zaznamenání odchodu</br>
 **Actors:** Rozvozce</br>
 **Trigger:** Rozvozce klikne na tlačítko v aplikaci.</br>
@@ -61,10 +62,47 @@ Na konci každé směny každý rozvozce bude moci zakliknout odchod a aplikace 
 &emsp;&emsp;&emsp;&emsp;1. Uživatel zaznamená odchod.</br>
 &emsp;&emsp;&emsp;&emsp;2. Čas se uloží do databáze.</br>
 &emsp;&emsp;&emsp;&emsp;3. Zaměstnancovi je vypočítána mzda a vyskočí pop-up okno.</br>
-**1.**: Čas příchodu je stejný, jako čas odchodu.</br>
+**1a.**: Čas příchodu je stejný, jako čas odchodu.</br>
 &emsp;&emsp;*1.a1* - Uživateli je sděleno, že čas, který zadal není v souladu s jeho pracovní dobou.</br>
 &emsp;&emsp;*1.a2* - Čas se neuloží do databáze.</br>
 &emsp;&emsp;*1.a3* - Zaměstnancovi není vypočítána mzda a pop-up okno nevyskočí.</br>
-**3.**: Zaměstnancova hodinová sazba je 0,-</br>
+**3a.**: Zaměstnancova hodinová sazba je 0,-</br>
 &emsp;&emsp;*3.a1* Účetní, nebo managerovi se odešle výzva k nastavení mzdy.</br>
 &emsp;&emsp;*3.a2* Use case pokračuje dál, s výslednou mzdou 0,-</br>
+</br>
+</br>
+
+**Title:** Přidání adresy na trasu</br>
+**Actors:** Rozvozce</br>
+**Trigger:** Rozvozce zadá adresu rozvozu.</br>
+**Pre-condition:** Rozvozce musí být přihlášen.</br>
+**Minimal guaranties:** V aplikaci se adresa přidá do seznamu adres.</br>
+**Main success:**</br>
+&emsp;&emsp;&emsp;&emsp;1. Rozvozce zadá adresu rozvozu.</br>
+&emsp;&emsp;&emsp;&emsp;2. Vypočítá se nejlepší možná trasa.</br>
+&emsp;&emsp;&emsp;&emsp;3. Seznam adres je přeuspořádán vzhledem k nejrychlejšímu času doručení.</br>
+&emsp;&emsp;&emsp;&emsp;4. Use-case se opakuje do té doby, než uživatel klikne na začít rozvoz.</br>
+**1a.**: Rozvozce zadal stejnou adresu, kterou již v seznamu má.</br>
+&emsp;&emsp;*1.a1* - Uživateli vyskočí info a zeptá se, jestli adresu chce přidat podruhé.</br>
+&emsp;&emsp;&emsp;&emsp;*1.a2.ANO* - Pokračuje se v use case 2. krokem</br>
+&emsp;&emsp;&emsp;&emsp;*1.a2.NE* - Pokračuje se v use case 1. krokem</br>
+</br>
+**1b.**: Rozvozce zadal neplatnou adresu, která neexistuje.</br>
+&emsp;&emsp;*1.b1* - Uživateli vyskočí upozornění, že adresa není platná.</br>
+&emsp;&emsp;*1.b2* - Uživateli se nabídne korekce adresy, pokud existuje.</br>
+&emsp;&emsp;*1.b3* - Use case pokračuje 1. krokem.</br>
+</br>
+**1c.**: Rozvozce zadal neúplnou adresu. (chybí číslo popisné)</br>
+&emsp;&emsp;*1.c1* - Uživateli vyskočí upozornění, že adresa není úplná.</br>
+&emsp;&emsp;*1.c2* - Uživateli se nabídne korekce adresy, pokud existuje.</br>
+&emsp;&emsp;*1.c3* - Use case pokračuje 1. krokem.</br>
+</br>
+**2a.**: Není možné vypočítat trasu. (lesy, polní cesty atd..)</br>
+&emsp;&emsp;*2.a1* - Uživateli vyskočí upozornění, že není možné vypočítat trasu, ale je mu ukázána mapa s možností "drop a pin to closest road" a rozvozce tak místo adresy zadá souřadnice.</br>
+&emsp;&emsp;*2.a2* - Use case pokračuje 2. krokem.</br>
+</br>
+**3a.**: Rozvozce chce pořadí upravit podle sebe</br>
+&emsp;&emsp;*3.a1* - Rozvozci je umožněno přeuspořádat si adresy podle sebe.</br>
+&emsp;&emsp;*3.a2* - Use case pokračuje 4. krokem, ale již bez 3. kroku.</br>
+</br>
+
