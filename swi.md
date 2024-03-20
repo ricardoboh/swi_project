@@ -70,7 +70,8 @@ Na konci každé směny každý rozvozce bude moci zakliknout odchod a aplikace 
 **Pre-condition:** Rozvozce musí být přihlášen a musí mít zaznamenaný příchod.</br>
 **Post-condition:** Rozvozcovi musí být vypočítána mzda.</br>
 **Minimal guaranties:** V aplikaci vyskočí pop-up okno s vypočítanou mzdou.</br>
-**Main success:** 1. Uživatel zaznamená odchod.</br>
+**Main success:**</br>
+</t>1. Uživatel zaznamená odchod.</br>
                   2. Čas se uloží do databáze.</br>
                   3. Zaměstnancovi je vypočítána mzda a vyskočí pop-up okno.</br>
 **1.**: Čas příchodu je stejný, jako čas odchodu.</br>
