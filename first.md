@@ -185,3 +185,64 @@ ChangeLastName(parameter1, parameter2); // Toto je funkce
 ### * Vysvětlete principy deklarace a definice jednoduché třídy v C++.*<br/>
 `Deklarace` je Popis třídy s proměnnými a metodami, které ve třídě můžeme použít.<br/>
 `Definice (implementace)` je popis jednotlivých metod, které se ve třídě nacházejí. Konstruktor, destruktor atd..
+
+# TŘETÍ CVIČENÍ
+
+### *Vysvětlete, jak vznikají objekty třídy, pojem konstruktor a principy práce s ním v C++.*<br/>
+Objekty vznikají pomocí `konstruktoru`, který naplní paměť daty popsanými v třídě--> V třídě je to funkce pojmenovaná stejně, jako třída a v implementaci je to pomocí *new*...
+
+### *Vysvětlete, jak zanikají objekty třídy, pojem destruktor a principy práce s ním v C++.*<br/>
+Objekty zanikají destruktorem, pomocí *delete* a v třídě je to destruktor pojmenovaný stejně, jako třída,, ale s ~ před názvem a tato funkce je vždy bez parametrů, používá se jen, když objekt má odpovědnoost za další paměť.
+
+### *Vysvětlete rozdíl mezi statickou a dynamickou deklarací objektů v C++.*<br/>
+Statická deklarace objektu je alokována na zásobníku, nebo v globální paměti. Mají pevně definovanou délku života, která je určena rozsahem jejich viditelnosti. Jsou automaticky zničeny. Používá se jen datový typ.<br/>
+```cpp
+void func() {
+    int x; // Staticky deklarovaný objekt
+    // ...
+}
+```
+Dynamická deklarace objektu je alokována na heapu (haldě). Délka života je definována pomocí alokačních a dealokačních operací: new; delete. Používá se pointer na datový typ.<br/>
+```cpp
+void func() {
+    int* ptr = new int; // Dynamicky alokovaný objekt
+
+    delete ptr; // Dealokace dynamicky alokovaného objektu
+}
+```
+<br/>
+
+### *Jak se dá postupovat, pokud chceme v zadání programu nalézt třídy, jejich metody a datové členy?*<br/>
+Postupujeme češtinářsky, hledáme podtatná jména(třídy), přídavná jména(instance tříídy) a slovesa(funkce a metody).
+
+### *Kdy a proč potřebujeme použit více konstruktorů jedné třídy?*<br/>
+Metoda se nazývá přetěžování, používáme ji, když nepotřebujeme zadávat všechny parametry, abychom neposílali zbytečná data, třída může být inicializována pomocí několika způsobů. Nabýzí nám to také použití defaultních parametrů. 
+
+### *Kdy potřebujeme deklarovat a definovat destruktor?*<br/>
+Destruktor definujeme, když má třída zodpovědnost i za další data uložená v paměti, než jen za sebe a své data.<br/>Např:<br/>
+```cpp
+class Other{
+    int Key;
+};
+
+class Key{
+    private:
+        int key;
+        Other **other;
+    public:
+        //...
+};
+```
+<br/>
+
+### *Co jsou výchozí konstruktory a destruktory a k čemu je potřebujeme?*<br/>
+Jsou bez parametrů, jestliže nepotřebujeme konstruktorem uvolňovat další paměť, stačí nám uvolnit jen daný objekt. Defaultní konstruktor inicializuje prázdný objekt.
+
+### *Jaké typy metod obvykle musíme deklarovat a definovat?*<br/>
+1. Konstruktory a Destruktory
+2. Metody poskytující informace o stavu obbjektu: Get..Is.. atd...
+3. Metody měnící stav objektu: Set..Change.. atd...
+
+### *Co jsou objektové kompozice a k čemu jsou dobré?*<br/>
+Jeden objekt se může stát součástí jiného motoru: například chladič v motoru je objekt a motor je taky objekt, takže objekt chladič je součástí objektu motoru. Objekt může být součástí více kompozic. Nové funkce, rozšíření funkčnosti, ale zachování modularity.
+
