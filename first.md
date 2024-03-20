@@ -176,9 +176,10 @@ Třídy by měly být `samostané` a `kombinovatelné` s ostatními. Třída by 
 Třída `skrývá` informace o svých proměnných, k proměnné `key` se dostaneme jen přes funkci GetKey(). Zvyšuje úroveň abstrakce a izolace. --> Volání metody, ne proměnné.
 
 ### *Vysvětlete princip zasílání zpráv.*<br/>
-Je to výpočetní mechanismus, zaslána zpráva daného jména a s potřebnými parametry
+Je to funkce, kterou ale víme, kdo spouští
 ```cpp
-aPerson.ChangeLastName("Charles");
+aPerson.ChangeLastName("Charles"); // Toto je zpráva
+ChangeLastName(parameter1, parameter2); // Toto je funkce
 ```
 
 ### * Vysvětlete principy deklarace a definice jednoduché třídy v C++.*<br/>
