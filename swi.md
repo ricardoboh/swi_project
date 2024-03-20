@@ -49,20 +49,7 @@ Na konci každé směny každý rozvozce bude moci zakliknout odchod a aplikace 
 
 
 ![use case diagram](https://github.com/ricardoboh/readmeOOP/blob/main/use_case_pic.png?raw=true)
-
-[comment]: <> Title: UC1: Rezervace pokoje
-[comment]: <> Actors: primární aktor podtrhnout
-[comment]: <> Trigger: Uživatel zvolil možnost rezervovat pokoj na www.
-[comment]: <> Pre condition: (podmínka splněná, než se stane tento use case uživatel musí být příhlášen
-[comment]: <> Post condition: (podmínka, co se musí stát po use casu.
-[comment]: <> Minimal guaranties: Uživatel obdrží mail
-[comment]: <> Main success scenario:
-[comment]: <>    --> Extension
-[comment]: <>    --> Alternative
-[comment]: <> Main success scenario je ten jeden scénář, kdyby to vše šlo dobře
-[comment]: <>  Pokud u některého dojde k větvení --> [numofmainscenario]a: ---> what can happen 
-[comment]: <>                                                              ->> ...a1:  co se stane vrátit se do hlavního menu
-)
+</br></br></br>
 
 **Title:** Zaznamenání odchodu</br>
 **Actors:** Rozvozce</br>
