@@ -43,7 +43,7 @@ Na konci každé směny každý rozvozce bude moci zakliknout odchod a aplikace 
 ### Performance
 **PR1** Systém musí být mobile device friendly --> nevyužívat mnoho baterie při práci na pozadí.<br>
 **PR2** Systém musí být škálovatelný, např. přidání nové provozovny se stejným systémem.<br>
-**PR3** Systém musí mít rychlou odezvu na server.<br>
+**PR3** Systém musí mít rychlou odezvu na server 0.5s.<br>
 
 ### Supportability
 **SR1** Aplikace musí mít dokumentaci.<br>
