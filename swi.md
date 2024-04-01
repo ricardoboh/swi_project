@@ -110,3 +110,5 @@ Na konci každé směny každý rozvozce bude moci zakliknout odchod a aplikace 
 </br>
 
 ![activity diagram](https://github.com/ricardoboh/swi_project/blob/main/activity_diagram_swi.png?raw=true)
+<br/><br/><br/>
+![class diagram](https://github.com/ricardoboh/swi_project/blob/main/class_diagram.png?raw=true)
